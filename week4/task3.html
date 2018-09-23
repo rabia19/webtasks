@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body{
+  position: relative;
+  
+}
+
+nav{
+  
+  background-color: black;
+  border: 1px solid red;
+  text-align: center;
+
+
+}
+nav a{
+  display: inline-flex;
+  color: white;
+  text-align: center;
+  padding: 10px 76px ;
+  text-decoration: none;
+  color:white;
+  border: 1px solid red;
+
+
+}
+ 
+nav a:hover{
+  opacity: 0.3;
+
+}
+
+section{
+  display: inline-block;
+  width: 70%;
+  margin-left: 250px;
+  
+
+}
+
+.card, .first{
+  display: inline-flex;
+  position: relative;
+  margin: 50px;
+  border: 2px solid blue;
+  border-radius: 5px;
+
+  
+
+  
+  
+}
+
+.card .title{
+  position: absolute;
+  background-color: blue;
+  border-bottom-right-radius: 5px; 
+  padding-right: 17px;
+  color: white;
+  width: 50%;
+
+
+}
+.card a{
+  position: absolute;
+  padding-left: 120px;
+}
+
+.card .price{
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  margin-right: 40px;
+  height: 25px;
+  width: 100%;
+
+}
+
+/*.alert{
+  border: 3px solid red;
+  margin:10px;
+  width: 30%;
+  height: 30%;
+
+
+}*/
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+/* just some content with arbitrary styles for explanation purposes */
+.alert {
+  background-color: white;
+  line-height: 200px;
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  border: 3px solid red;
+  width: 30%;
+  height: 30%;
+  margin-top: -100px;
+  margin-left: -250px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 10; /* 1px higher than the overlay layer */
+}
+
+
+
+
+</style>
+  </head>
+
+  <body>
+    <div class="overlay">
+      <div class="alert">
+        <h1>Welcome to Wheels.kz</h1>
+        <p>If you have any questions, please contact us by no: 87017023535</p>
+        <p>The best cars with the best prices are present on our website and application</p>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Prices</a>
+        <a href="#">Contacts</a>
+        <a href="#">Opportunities</a>
+      </nav>
+    </header>
+    <section>
+      <div class="card first">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">BMW X6</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">Mercedes C100</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">BMW X5</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">Mitsibushi Outlander</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">Audi A8</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+      
+      <div class="card">
+        <img src="http://via.placeholder.com/150x150"/>
+        <div class="price">10.000 $</div>
+        <div class="title">BMW X6</div>
+        <a href="#"><img width="30px" class="icon" src="https://image.flaticon.com/icons/png/512/2/2772.png"/></a>
+      </div>
+    </section>
+  </body>
+
+</html>
