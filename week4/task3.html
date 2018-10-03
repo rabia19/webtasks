@@ -76,18 +76,8 @@ section{
   margin-right: 40px;
   height: 25px;
   width: 100%;
-
+s
 }
-
-/*.alert{
-  border: 3px solid red;
-  margin:10px;
-  width: 30%;
-  height: 30%;
-
-
-}*/
-
 
 .overlay {
     position: fixed;
@@ -97,29 +87,62 @@ section{
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 10;
+    justify-content: center;
 }
 
-/* just some content with arbitrary styles for explanation purposes */
+
 .alert {
   background-color: white;
-  line-height: 200px;
+  
   position: fixed;
   top: 50%; 
   left: 50%;
   border: 3px solid red;
   width: 30%;
-  height: 30%;
+  height: auto;
   margin-top: -100px;
-  margin-left: -250px;
+  margin-left: -240px;
   border-radius: 5px;
+  z-index: 10; 
+ 
+
+}
+.alert p{
+  float: left;
+  margin-left: 10px;
+  justify-content: space-around;
+}
+.alert h1{
   text-align: center;
-  z-index: 10; /* 1px higher than the overlay layer */
+
+}
+.button{
+width: 150px;
+padding: 10px;
+background-color: green;
+box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+font-weight:bold;
+text-decoration:none;
+}
+
+@media(max-width: 400 ){
+  body{
+    display: flex;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue; 
+    
+  }
 }
 
 
 
 
 </style>
+
+
   </head>
 
   <body>

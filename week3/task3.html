@@ -2,39 +2,38 @@
 <head>
 <style>
 body{
-  text-align: center;
-
-
   background-image: url("http://backgroundlabs.com/wp-content/uploads/2013/04/subtle-mosaic-pattern.png");
+
+  
+
 
 }
 
 .container {
-  background-color: white;
-
+  flex-grow: 1;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 
   
 }
-
-.container, .main_section{
-  text-align: center;
-
-}
-
-
 nav{
   
   background-color: #D1CDBD;
-
+  text-align: center;
 
 }
 nav a{
   display: inline-flex;
   color: black;
   text-align: center;
-  padding: 10px 46px ;
+  padding:10px 67px ;
   text-decoration: none;
   font-size: 20px;
+}
+
+header{
+  background-color: rgba(255,255,255,0.7);
 }
 
 
@@ -42,23 +41,39 @@ nav a{
   background-color:red;
   color:white;
 }
+.container .logo_part{
+  display: inline-flex;
+}
 
 .container .logo_part .search {
-  float: right;
+  margin-left: 300px;
   margin-top: 50px;
 }
 
+.container .logo_part img{
+ 
+  float: left;
+}
 
-.main_section {
-  display: inline-block;
-  width: 70%;
+section.main_section{
+  background-color: white;
+  flex-grow: 1;
+    display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main_section .cards{
+
+  display: inline;
+  margin-right: 50px;
+  background-color: white;
 
   
 }
 .main_section .cards .card{
   position: relative;
   display: inline-block;
-  margin: 50px; 
+  margin: 40px; 
   border: 2px solid red;
   border-radius: 5px;
   height: 175px;
@@ -86,16 +101,22 @@ nav a{
 
 
 footer{
-  background-color: black;
-  color: white;
-  flex-shrink: 1;
-  
-  padding: 50px;
 
+  width:100%;
+  height:44px;
+  padding-top:20px;
+  background:black;
+  color:white;
+  text-align:center;
+  flex:1;
+
+
+  
+   
+   
+  
 
 }
-
-
 
 </style>
 </head>
